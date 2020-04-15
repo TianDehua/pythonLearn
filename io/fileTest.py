@@ -37,3 +37,6 @@ def listAllFile(di):
            print('unkown:', os.path.abspath(x)) 
 
 listAllFile('.')
+
+# 测试__file__，是什么
+print('__file__=', os.path.dirname(__file__))
