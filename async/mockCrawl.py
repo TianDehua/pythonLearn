@@ -36,4 +36,6 @@ async def main_1(urls):
 
 if __name__ == '__main__':
     #main(['url_1', 'url_2', 'url_3', 'url_4'])
-    asyncio.run(main_1(['url_1', 'url_2', 'url_3', 'url_4']))
+    #asyncio.run(main_1(['url_1', 'url_2', 'url_3', 'url_4']))
+    wait = asyncio.wait([crawl_page_1(url) for url in ('url_1', 'url_2', 'url_3', 'url_4')])
+    asyncio.run(wait)
