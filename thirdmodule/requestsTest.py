@@ -21,13 +21,13 @@ print(r.content) #文本或二进制内容的bytes对象
 
 
 # # post请求
-# r = requests.post('https://accounts.douban.com/login', 
-# headers={'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit'},
-# data={'form_email': 'abc@example.com', 'form_password': '123456'},
-# verify=False)
-# print(r.status_code)
-# print(r.text)
-# print(chardet.detect(r.text))
+r = requests.post('https://accounts.douban.com/login', 
+headers={'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit'},
+data={'form_email': 'abc@example.com', 'form_password': '123456'},
+verify=False)
+print(r.status_code)
+print(r.text)
+print(chardet.detect(r.text))
 
 
 
